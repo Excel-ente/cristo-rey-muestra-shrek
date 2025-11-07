@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería del Festival - The Enchanted Swamp 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="feed-page">
+    <!-- Botón Flotante de Idioma -->
+    <button id="languageToggle" class="language-toggle" aria-label="Cambiar idioma">
+        <span class="lang-icon">🌐</span>
+        <span class="lang-text">ES</span>
+    </button>
+
+    <!-- Personajes SVG Decorativos para Feed -->
+    <div class="shrek-characters">
+        <!-- Burro - Esquina superior -->
+        <div class="character character-donkey-feed">
+            <img src="./images/burro.svg" alt="Burro">
+        </div>
+
+        <!-- Gato con Botas -->
+        <div class="character character-puss-feed">
+            <img src="./images/gato_con_botas.svg" alt="Gato con Botas">
+        </div>
+
+        <!-- Jengibre -->
+        <div class="character character-gingerbread-feed">
+            <img src="./images/jengibre.svg" alt="Jengibre">
+        </div>
+    </div>
+
+    <header class="header feed-header">
+        <!-- Mini Burro en header del feed -->
+        <div class="header-character">
+            <img src="./images/burro.svg" alt="Burro">
+        </div>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+        <h1 class="header__title" data-lang-en="Festival Gallery" data-lang-es="Galería del Festival">Galería del Festival</h1>
+        <h2 class="header__subtitle">The Enchanted Swamp 2025</h2>
+    </header>
+
+    <main class="feed-grid-container">
+        <!-- Cada "feed-item" es una foto o video --><div class="feed-item" data-type="image" data-src="./images/feed_1.jpg" data-alt="Taller de pintura">
+            <img src="./images/feed_1.jpg" alt="Taller de pintura">
+            <span class="feed-item__caption">Taller de pintura con 1° grado.</span>
+        </div>
+
+        <div class="feed-item" data-type="video" data-src="./videos/feed_video_1.mp4" data-alt="Alumnos trabajando">
+            <video src="./videos/feed_video_1.mp4" muted loop></video>
+            <span class="feed-item__caption">Pequeños artistas en acción.</span>
+        </div>
+
+        <div class="feed-item" data-type="image" data-src="./images/feed_2.jpg" data-alt="Detalle de obra">
+            <img src="./images/feed_2.jpg" alt="Detalle de obra">
+            <span class="feed-item__caption">Detalles de una obra de 3° grado.</span>
+        </div>
+
+        <div class="feed-item" data-type="image" data-src="./images/feed_3.jpg" data-alt="Exposición final">
+            <img src="./images/feed_3.jpg" alt="Exposición final">
+            <span class="feed-item__caption">Preparando la exposición final.</span>
+        </div>
+
+        <div class="feed-item" data-type="image" data-src="./images/feed_4.jpg" data-alt="Escultura">
+            <img src="./images/feed_4.jpg" alt="Escultura">
+            <span class="feed-item__caption">Escultura innovadora de 6° grado.</span>
+        </div>
+
+        <div class="feed-item" data-type="video" data-src="./videos/feed_video_2.mp4" data-alt="Entrevistas">
+            <video src="./videos/feed_video_2.mp4" muted loop></video>
+            <span class="feed-item__caption">Momentos de inspiración y creatividad.</span>
+        </div>
+        <!-- Añade más items al feed aquí --></main>
+
+    <!-- Modal para visualización de imagen/video en pantalla completa --><div id="fullscreenModal" class="modal">
+        <span class="close-button">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Imagen en pantalla completa" style="display: none;">
+            <video id="modalVideo" src="" controls style="display: none;"></video>
+            <p id="modalCaption" class="modal-caption"></p>
+        </div>
+        <a class="prev-button">&#10094;</a>
+        <a class="next-button">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

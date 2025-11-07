@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Enchanted Swamp Festival 2025 - Instituto Cristo Rey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos para Maps, Calendar, etc. --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Botón Flotante de Idioma -->
+    <button id="languageToggle" class="language-toggle" aria-label="Cambiar idioma">
+        <span class="lang-icon">🌐</span>
+        <span class="lang-text">ES</span>
+    </button>
+
+    <!-- Personajes SVG Decorativos -->
+    <div class="shrek-characters">
+        <!-- Burro - Esquina superior derecha -->
+        <div class="character character-donkey" data-character="donkey">
+            <img src="./images/burro.svg" alt="Burro">
+        </div>
+
+        <!-- Fiona - Lateral izquierdo -->
+        <div class="character character-fiona" data-character="fiona">
+            <img src="./images/fiona.svg" alt="Fiona">
+        </div>
+
+        <!-- Gato con Botas - Lateral derecho -->
+        <div class="character character-puss" data-character="puss">
+            <img src="./images/gato_con_botas.svg" alt="Gato con Botas">
+        </div>
+
+        <!-- Dragón - Esquina inferior -->
+        <div class="character character-dragon" data-character="dragon">
+            <img src="./images/dragon.svg" alt="Dragón">
+        </div>
+
+        <!-- Jengibre - Flotante -->
+        <div class="character character-gingerbread" data-character="gingerbread">
+            <img src="./images/jengibre.svg" alt="Jengibre">
+        </div>
+    </div>
+
+    <header class="header">
+        <!-- Mini Shrek en header -->
+        <div class="header-character">
+            <img src="./images/shrek.svg" alt="Shrek">
+        </div>
+        <img src="./images/logo.png" alt="Logo Instituto Cristo Rey" class="header__logo">
+        <h1 class="header__title" data-lang-en="The Enchanted Swamp Festival 2025" data-lang-es="Festival del Pantano Encantado 2025">The Enchanted Swamp Festival 2025</h1>
+        <h2 class="header__subtitle">Instituto Parroquial Cristo Rey</h2>
+    </header>
+
+    <main class="main-content">
+        <section class="section intro-section">
+            <!-- Widget Burro sonriente -->
+            <div class="section-character section-character-left">
+                <img src="./images/burro.svg" alt="Burro">
+            </div>
+            <p data-lang-en="During Art classes, the students became true artists and worked with great creativity to bring the Festival 2025 scenery to life." data-lang-es="Durante las clases de Arte, los chicos se convirtieron en verdaderos artistas y trabajaron con mucha creatividad para dar vida a la escenografía del Festival 2025.">Durante las clases de Arte, los chicos se convirtieron en verdaderos artistas y trabajaron con mucha creatividad para dar vida a la escenografía del Festival 2025.</p>
+            <p data-lang-en="On this page we want to share with families some photos of the process: the working moments, the ideas that were taking shape and all the joy that was experienced while creating." data-lang-es="En esta página queremos compartir con las familias algunas fotos del proceso: los momentos de trabajo, las ideas que fueron tomando forma y toda la alegría que se vivió mientras creaban.">En esta página queremos compartir con las familias algunas fotos del proceso: los momentos de trabajo, las ideas que fueron tomando forma y toda la alegría que se vivió mientras creaban.</p>
+            <p data-lang-en="We invite you to browse through the images and enjoy this behind the scenes full of color, effort and enthusiasm!" data-lang-es="¡Los invitamos a recorrer las imágenes y disfrutar de este detrás de escena lleno de color, esfuerzo y entusiasmo!">¡Los invitamos a recorrer las imágenes y disfrutar de este detrás de escena lleno de color, esfuerzo y entusiasmo!</p>
+        </section>
+
+        <section class="section action-buttons-section">
+            <a href="https://www.google.com/maps/place/Instituto+Parroquial+Cristo+Rey,+Monse%C3%B1or+L%C3%B3pez+May+3304,+B1757+Gregorio+de+Laferrere,+Provincia+de+Buenos+Aires/@-34.751187,-58.587501,17z/data=!4m6!3m5!1s0x95bdd4d3a0178351:0x498a12e4f509d6f6!8m2!3d-34.751187!4d-58.587501!16s%2Fg%2F1tf709n_?entry=ttu" target="_blank" class="btn action-btn maps-btn">
+                <i class="fas fa-map-marker-alt"></i> <span data-lang-en="How to Get to School" data-lang-es="Cómo Llegar al Colegio">Cómo Llegar al Colegio</span>
+            </a>
+            <button id="addToCalendarBtn" class="btn action-btn calendar-btn">
+                <i class="fas fa-calendar-alt"></i> <span data-lang-en="Add to Calendar" data-lang-es="Agendar Evento">Agendar Evento</span>
+            </button>
+        </section>
+
+        <section class="section project-section">
+            <!-- Widget Gato con Botas -->
+            <div class="section-character section-character-right">
+                <img src="./images/gato_con_botas.svg" alt="Gato con Botas">
+            </div>
+            <h3 class="section__title" data-lang-en="Our Scenery: The Enchanted Swamp" data-lang-es="Nuestra Escenografía: The Enchanted Swamp">Nuestra Escenografía: The Enchanted Swamp</h3>
+            <p data-lang-en="Discover the incredible work of our students in creating the festival scenery. Every detail was thought with creativity and effort!" data-lang-es="Descubre el increíble trabajo de nuestros alumnos en la creación de la escenografía del festival. ¡Cada detalle fue pensado con creatividad y esfuerzo!">Descubre el increíble trabajo de nuestros alumnos en la creación de la escenografía del festival. ¡Cada detalle fue pensado con creatividad y esfuerzo!</p>
+            <div class="gallery project-gallery">
+                <img src="./images/muestra_01.jpg" alt="Escenografía 1" class="gallery__item" data-full="./images/escenografia_1.jpg">
+                <video src="./videos/vide_muestra_general_1.mp4" controls muted loop class="gallery__item" data-full="./videos/escenografia_video_1.mp4"></video>
+                <img src="./images/muestra_02.jpg" alt="Escenografía 2" class="gallery__item" data-full="./images/escenografia_2.jpg">
+                <img src="./images/muestra_03.jpg" alt="Escenografía 3" class="gallery__item" data-full="./images/escenografia_3.jpg">
+                <!-- Agrega más imágenes/videos de la escenografía aquí --></div>
+        </section>
+
+        <section class="section text-section">
+            <!-- Widget Fiona -->
+            <div class="section-character section-character-left">
+                <img src="./images/fiona.svg" alt="Fiona">
+            </div>
+            <h3 class="section__title" data-lang-en="About the Festival" data-lang-es="Sobre el Festival">Sobre el Festival</h3>
+            <p data-lang-en="The 'The Enchanted Swamp Festival 2025' project emerges as a celebration of creativity and art in Primary School. Inspired by the magical world of the enchanted swamp, students have worked on building scenery that transports families to a universe full of fantasy and color." data-lang-es="El proyecto 'The Enchanted Swamp Festival 2025' surge como una celebración de la creatividad y el arte en el Nivel Primario. Inspirados en el mundo mágico del pantano encantado, los estudiantes han trabajado en la construcción de una escenografía que transporta a las familias a un universo lleno de fantasía y color.">El proyecto "The Enchanted Swamp Festival 2025" surge como una celebración de la creatividad y el arte en el Nivel Primario. Inspirados en el mundo mágico del pantano encantado, los estudiantes han trabajado en la construcción de una escenografía que transporta a las familias a un universo lleno de fantasía y color.</p>
+            <p data-lang-en="Creativity and artistic expression are fundamental pillars in the development of our students. This project seeks to foster imagination, teamwork and the ability to transform ideas into visual realities, while learning about the artistic process and the value of collective effort." data-lang-es="La creatividad y expresión artística son pilares fundamentales en el desarrollo de nuestros estudiantes. Este proyecto busca fomentar la imaginación, el trabajo en equipo y la capacidad de transformar ideas en realidades visuales, mientras aprenden sobre el proceso artístico y el valor del esfuerzo colectivo.">La creatividad y expresión artística son pilares fundamentales en el desarrollo de nuestros estudiantes. Este proyecto busca fomentar la imaginación, el trabajo en equipo y la capacidad de transformar ideas en realidades visuales, mientras aprenden sobre el proceso artístico y el valor del esfuerzo colectivo.</p>
+        </section>
+
+        <section class="section year-galleries-section">
+            <h3 class="section__title" data-lang-en="Galleries by Grade" data-lang-es="Galerías por Año">Galerías por Año</h3>
+            <p data-lang-en="Explore the art of each grade by clicking on the corresponding button. We invite you to see the process and the final result!" data-lang-es="Explora el arte de cada grado, haciendo clic en el botón correspondiente. ¡Te invitamos a ver el proceso y el resultado final!">Explora el arte de cada grado, haciendo clic en el botón correspondiente. ¡Te invitamos a ver el proceso y el resultado final!</p>
+            <div class="year-buttons">
+                <a href="#gallery-primero" class="btn year-btn" data-year="primero"><span data-lang-en="First Grade" data-lang-es="Primero">Primero</span></a>
+                <a href="#gallery-tercero" class="btn year-btn" data-year="tercero"><span data-lang-en="Third Grade" data-lang-es="Tercero">Tercero</span></a>
+                <a href="#gallery-sexto" class="btn year-btn" data-year="sexto"><span data-lang-en="Sixth Grade" data-lang-es="Sexto">Sexto</span></a>
+                <a href="feed.html" class="btn feed-btn"><i class="fas fa-grip-horizontal"></i> <span data-lang-en="View Full Gallery" data-lang-es="Ver el Feed Completo">Ver el Feed Completo</span></a>
+            </div>
+
+            <!-- GALERÍAS EN LA MISMA PÁGINA (Si son pocas fotos) --><div id="gallery-primero" class="grade-gallery-section" style="display: none;">
+                <h4 class="grade-gallery__title" data-lang-en="Gallery: First Grade" data-lang-es="Galería: Primero">Galería: Primero</h4>
+                <div class="gallery">
+                    <img src="./images/primero_1.png" alt="Primero 1" class="gallery__item" data-full="./images/primero_1.png">
+                    <img src="./images/primero_2.png" alt="Primero 2" class="gallery__item" data-full="./images/primero_2.png">
+                    <!-- Más fotos de Primero --></div>
+            </div>
+
+            <div id="gallery-tercero" class="grade-gallery-section" style="display: none;">
+                <h4 class="grade-gallery__title" data-lang-en="Gallery: Third Grade" data-lang-es="Galería: Tercero">Galería: Tercero</h4>
+                <div class="gallery">
+                    <img src="./images/tercero_1.png" alt="Tercero 1" class="gallery__item" data-full="./images/tercero_1.png">
+                    <video src="./videos/tercero_video_1.mp4" controls muted loop class="gallery__item" data-full="./videos/tercero_video_1.mp4"></video>
+                    <!-- Más fotos/videos de Tercero --></div>
+            </div>
+
+            <div id="gallery-sexto" class="grade-gallery-section" style="display: none;">
+                <h4 class="grade-gallery__title" data-lang-en="Gallery: Sixth Grade" data-lang-es="Galería: Sexto">Galería: Sexto</h4>
+                <div class="gallery">
+                    <img src="./images/sexto_1.png" alt="Sexto 1" class="gallery__item" data-full="./images/sexto_1.png">
+                    <img src="./images/sexto_2.png" alt="Sexto 2" class="gallery__item" data-full="./images/sexto_2.png">
+                    <!-- Más fotos de Sexto --></div>
+            </div>
+        </section>
+
+        <section class="section teachers-section">
+            <!-- Widget Dragón -->
+            <div class="section-character section-character-right">
+                <img src="./images/dragon.svg" alt="Dragón">
+            </div>
+            <h3 class="section__title" data-lang-en="Art Teachers" data-lang-es="Profesoras de Arte">Profesoras de Arte</h3>
+            <div class="teachers-list">
+                <div class="teacher-item">
+                    <div class="teacher-icon">🎨</div>
+                    <div class="teacher-info">
+                        <h4 class="teacher-name">Milagros Salas</h4>
+                        <p class="teacher-grades" data-lang-en="Grades: 1°A, 1°B, 1°C" data-lang-es="Grados: 1°A, 1°B, 1°C">Grados: 1°A, 1°B, 1°C</p>
+                    </div>
+                </div>
+                <div class="teacher-item">
+                    <div class="teacher-icon">🎨</div>
+                    <div class="teacher-info">
+                        <h4 class="teacher-name">Andrea Palmisano</h4>
+                        <p class="teacher-grades" data-lang-en="Grades: 3°A, 3°B, 3°C, 6°A, 6°B, 6°C" data-lang-es="Grados: 3°A, 3°B, 3°C, 6°A, 6°B, 6°C">Grados: 3°A, 3°B, 3°C, 6°A, 6°B, 6°C</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Logo Cristo Rey en footer -->
+        <div class="footer-character">
+            <img src="./images/logo.png" alt="Logo Instituto Cristo Rey">
+        </div>
+        <p>&copy; 2025 Instituto Parroquial Cristo Rey. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal para visualización de imagen/video en pantalla completa --><div id="fullscreenModal" class="modal">
+        <span class="close-button">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Imagen en pantalla completa" style="display: none;">
+            <video id="modalVideo" src="" controls style="display: none;"></video>
+        </div>
+        <a class="prev-button">&#10094;</a>
+        <a class="next-button">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
