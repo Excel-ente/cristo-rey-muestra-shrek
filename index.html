@@ -11,6 +11,13 @@
     <!-- Iconos para Maps, Calendar, etc. --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Splash Screen / Preloader -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <img src="intro.svg" alt="Festival Logo" class="splash-logo">
+        </div>
+    </div>
+
     <!-- Botón Flotante de Idioma -->
     <button id="languageToggle" class="language-toggle" aria-label="Cambiar idioma">
         <span class="lang-icon">🌐</span>
@@ -66,14 +73,106 @@
             <p data-lang-en="We invite you to browse through the images and enjoy this behind the scenes full of color, effort and enthusiasm!" data-lang-es="¡Los invitamos a recorrer las imágenes y disfrutar de este detrás de escena lleno de color, esfuerzo y entusiasmo!">¡Los invitamos a recorrer las imágenes y disfrutar de este detrás de escena lleno de color, esfuerzo y entusiasmo!</p>
         </section>
 
-        <section class="section action-buttons-section">
-            <a href="https://www.google.com/maps/place/Instituto+Parroquial+Cristo+Rey,+Monse%C3%B1or+L%C3%B3pez+May+3304,+B1757+Gregorio+de+Laferrere,+Provincia+de+Buenos+Aires/@-34.751187,-58.587501,17z/data=!4m6!3m5!1s0x95bdd4d3a0178351:0x498a12e4f509d6f6!8m2!3d-34.751187!4d-58.587501!16s%2Fg%2F1tf709n_?entry=ttu" target="_blank" class="btn action-btn maps-btn">
-                <i class="fas fa-map-marker-alt"></i> <span data-lang-en="How to Get to School" data-lang-es="Cómo Llegar al Colegio">Cómo Llegar al Colegio</span>
-            </a>
-            <button id="addToCalendarBtn" class="btn action-btn calendar-btn">
-                <i class="fas fa-calendar-alt"></i> <span data-lang-en="Add to Calendar" data-lang-es="Agendar Evento">Agendar Evento</span>
-            </button>
+        <section class="section text-section">
+            <!-- Widget Fiona -->
+            <div class="section-character section-character-left">
+                <img src="./images/fiona.svg" alt="Fiona">
+            </div>
+            <h3 class="section__title" data-lang-en="About the Festival" data-lang-es="Sobre el Festival">Sobre el Festival</h3>
+            <p data-lang-en="ONE QUIET DAY IN HIS SWAMP, SHREK'S PEACE IS INTERRUPTED WHEN CHARACTERS FROM DIFFERENT FAIRY TALES SUDDENLY APPEAR. CONFUSION, LAUGHTER, AND A TOUCH OF MAGIC FILL THE SWAMP AS EVERYONE LEARNS AN UNEXPECTED LESSON ABOUT FRIENDSHIP AND BELIEVING IN THEMSELVES." data-lang-es="UN DÍA TRANQUILO EN EL PANTANO DE SHREK SE VE INTERRUMPIDO CUANDO PERSONAJES DE DISTINTOS CUENTOS DE HADAS APARECEN REPENTINAMENTE. CONFUSIÓN, RISAS Y UN TOQUE DE MAGIA LLENAN EL PANTANO MIENTRAS TODOS APRENDEN UNA INESPERADA LECCIÓN SOBRE LA AMISTAD Y CREER EN SÍ MISMOS.">UN DÍA TRANQUILO EN EL PANTANO DE SHREK SE VE INTERRUMPIDO CUANDO PERSONAJES DE DISTINTOS CUENTOS DE HADAS APARECEN REPENTINAMENTE. CONFUSIÓN, RISAS Y UN TOQUE DE MAGIA LLENAN EL PANTANO MIENTRAS TODOS APRENDEN UNA INESPERADA LECCIÓN SOBRE LA AMISTAD Y CREER EN SÍ MISMOS.</p>
         </section>
+
+        <section class="section cast-section">
+            <h3 class="section__title" data-lang-en="Meet the Cast" data-lang-es="Conoce al Elenco">Conoce al Elenco</h3>
+            <p data-lang-en="Click on each character to learn more about the talented actors bringing them to life!" data-lang-es="¡Haz clic en cada personaje para conocer más sobre los talentosos actores que les dan vida!">¡Haz clic en cada personaje para conocer más sobre los talentosos actores que les dan vida!</p>
+            <div class="cast-grid">
+                <div class="cast-card" data-character="shrek" data-name="Bautista Formica" data-grade="6°B">
+                    <img src="./images/shrek.svg" alt="Shrek">
+                    <h4>Shrek</h4>
+                </div>
+                <div class="cast-card" data-character="donkey" data-name="Santino Di Gracia" data-grade="6°B">
+                    <img src="./images/burro.svg" alt="Donkey">
+                    <h4>Donkey</h4>
+                </div>
+                <div class="cast-card" data-character="puss" data-name="Valentino Salto" data-grade="6°A">
+                    <img src="./images/gato_con_botas.svg" alt="Puss in Boots">
+                    <h4>Puss in Boots</h4>
+                </div>
+                <div class="cast-card" data-character="fiona" data-name="Alma Acosta" data-grade="6°A">
+                    <img src="./images/fiona.svg" alt="Fiona">
+                    <h4>Fiona</h4>
+                </div>
+                <div class="cast-card" data-character="dragon" data-name="Morena Arancibia" data-grade="6°C">
+                    <img src="./images/dragon.svg" alt="Dragon">
+                    <h4>Dragon</h4>
+                </div>
+                <div class="cast-card" data-character="gingerbread" data-name="Catalina Gonzalez" data-grade="6°C">
+                    <img src="./images/jengibre.svg" alt="Gingerbread Man">
+                    <h4>Gingerbread Man</h4>
+                </div>
+                <div class="cast-card" data-character="lord_farquaad" data-name="Bastian D'Amico" data-grade="6°A">
+                    <img src="./images/lord_farquaad.svg" alt="Lord Farquaad">
+                    <h4>Lord Farquaad</h4>
+                </div>
+                <!-- Add more characters as needed -->
+            </div>
+        </section>
+
+        <section class="section production-section">
+            <h3 class="section__title" data-lang-en="Production Team" data-lang-es="Equipo de Producción">Equipo de Producción</h3>
+            <p class="clickable-note" data-lang-en="Click on a name to see the student's photo!" data-lang-es="¡Haz clic en un nombre para ver la foto del alumno!"></p>
+            <div class="production-list">
+                <div class="production-item">
+                    <h4 data-lang-en="Narrators" data-lang-es="Narradores">Narradores</h4>
+                    <ul class="student-list">
+                        <li>👧 <span class="student-name" data-name="Antonia Brienza" data-grade="6°A">Antonia Brienza</span></li>
+                        <li>👦 <span class="student-name" data-name="Austin Sosa" data-grade="6°A">Austin Sosa</span></li>
+                        <li>👧 <span class="student-name" data-name="Cielo Nuñez" data-grade="6°B">Cielo Nuñez</span></li>
+                        <li>👦 <span class="student-name" data-name="Ciro Rodriguez" data-grade="6°B">Ciro Rodriguez</span></li>
+                        <li>👧 <span class="student-name" data-name="Delfina Cañete" data-grade="6°C">Delfina Cañete</span></li>
+                        <li>👧 <span class="student-name" data-name="Julieta Baigorria" data-grade="6°C">Julieta Baigorria</span></li>
+                    </ul>
+                </div>
+                <div class="production-item">
+                    <h4 data-lang-en="Script and Dialogues" data-lang-es="Guion y Diálogos">Guion y Diálogos</h4>
+                    <ul class="student-list">
+                        <li>👩‍🏫 <span class="student-name" data-name="Ana Fernández" data-grade="Docente">Ana Fernández</span></li>
+                        <li>👩‍🏫 <span class="student-name" data-name="Johanna Salas" data-grade="Docente">Johanna Salas</span></li>
+                        <li>👨‍🏫 <span class="student-name" data-name="Sebastián Payé" data-grade="Docente">Sebastián Payé</span></li>
+                    </ul>
+                </div>
+                <div class="production-item">
+                    <h4 data-lang-en="Choreographies" data-lang-es="Coreografías">Coreografías</h4>
+                    <ul class="student-list">
+                        <li>👨‍🏫 <span class="student-name" data-name="Iván Landriel" data-grade="Docente">Iván Landriel</span></li>
+                        <li>👩‍🏫 <span class="student-name" data-name="Florencia Escobar" data-grade="Docente">Florencia Escobar</span></li>
+                    </ul>
+                </div>
+                <div class="production-item">
+                    <h4 data-lang-en="Scenography Team" data-lang-es="Equipo de Escenografía">Equipo de Escenografía</h4>
+                    <p><strong data-lang-en="Teachers:" data-lang-es="Profesoras:">Profesoras:</strong></p>
+                    <ul class="student-list">
+                        <li>👩‍🏫 <span class="student-name" data-name="Andrea Palmisano" data-grade="Docente">Andrea Palmisano</span></li>
+                        <li>👩‍🏫 <span class="student-name" data-name="Milagros Salas" data-grade="Docente">Milagros Salas</span></li>
+                    </ul>
+                    <p><strong data-lang-en="Students:" data-lang-es="Alumnos:">Alumnos:</strong></p>
+                    <ul class="student-list">
+                        <li>👦 <span class="student-name" data-name="Lisandro Agüero" data-grade="6°A">Lisandro Agüero</span></li>
+                        <li>👦 <span class="student-name" data-name="Luciano Guillen" data-grade="6°A">Luciano Guillen</span></li>
+                        <li>👦 <span class="student-name" data-name="Milo Ceraldi" data-grade="6°B">Milo Ceraldi</span></li>
+                        <li>👧 <span class="student-name" data-name="Paz Banegas Rossi" data-grade="6°B">Paz Banegas Rossi</span></li>
+                        <li>👦 <span class="student-name" data-name="Santiago Jimenez" data-grade="6°C">Santiago Jimenez</span></li>
+                        <li>👦 <span class="student-name" data-name="Valentino Chavez" data-grade="6°C">Valentino Chavez</span></li>
+                    </ul>
+                </div>
+                <div class="production-item">
+                    <h4 data-lang-en="Technical Support & School Maintenance" data-lang-es="Soporte Técnico y Mantenimiento Escolar">Soporte Técnico y Mantenimiento Escolar</h4>
+                    <p data-lang-en="School technical team" data-lang-es="Equipo técnico del colegio">Equipo técnico del colegio</p>
+                </div>
+            </div>
+        </section>
+
+
 
         <section class="section project-section">
             <!-- Widget Gato con Botas -->
@@ -90,19 +189,11 @@
                 <!-- Agrega más imágenes/videos de la escenografía aquí --></div>
         </section>
 
-        <section class="section text-section">
-            <!-- Widget Fiona -->
-            <div class="section-character section-character-left">
-                <img src="./images/fiona.svg" alt="Fiona">
-            </div>
-            <h3 class="section__title" data-lang-en="About the Festival" data-lang-es="Sobre el Festival">Sobre el Festival</h3>
-            <p data-lang-en="The 'The Enchanted Swamp Festival 2025' project emerges as a celebration of creativity and art in Primary School. Inspired by the magical world of the enchanted swamp, students have worked on building scenery that transports families to a universe full of fantasy and color." data-lang-es="El proyecto 'The Enchanted Swamp Festival 2025' surge como una celebración de la creatividad y el arte en el Nivel Primario. Inspirados en el mundo mágico del pantano encantado, los estudiantes han trabajado en la construcción de una escenografía que transporta a las familias a un universo lleno de fantasía y color.">El proyecto "The Enchanted Swamp Festival 2025" surge como una celebración de la creatividad y el arte en el Nivel Primario. Inspirados en el mundo mágico del pantano encantado, los estudiantes han trabajado en la construcción de una escenografía que transporta a las familias a un universo lleno de fantasía y color.</p>
-            <p data-lang-en="Creativity and artistic expression are fundamental pillars in the development of our students. This project seeks to foster imagination, teamwork and the ability to transform ideas into visual realities, while learning about the artistic process and the value of collective effort." data-lang-es="La creatividad y expresión artística son pilares fundamentales en el desarrollo de nuestros estudiantes. Este proyecto busca fomentar la imaginación, el trabajo en equipo y la capacidad de transformar ideas en realidades visuales, mientras aprenden sobre el proceso artístico y el valor del esfuerzo colectivo.">La creatividad y expresión artística son pilares fundamentales en el desarrollo de nuestros estudiantes. Este proyecto busca fomentar la imaginación, el trabajo en equipo y la capacidad de transformar ideas en realidades visuales, mientras aprenden sobre el proceso artístico y el valor del esfuerzo colectivo.</p>
-        </section>
+
 
         <section class="section year-galleries-section">
             <h3 class="section__title" data-lang-en="Galleries by Grade" data-lang-es="Galerías por Año">Galerías por Año</h3>
-            <p data-lang-en="Explore the art of each grade by clicking on the corresponding button. We invite you to see the process and the final result!" data-lang-es="Explora el arte de cada grado, haciendo clic en el botón correspondiente. ¡Te invitamos a ver el proceso y el resultado final!">Explora el arte de cada grado, haciendo clic en el botón correspondiente. ¡Te invitamos a ver el proceso y el resultado final!</p>
+            <p data-lang-en="All primary grades (1st through 6th) participated in the festival! Explore the art and creativity of each grade by clicking on the corresponding button. We invite you to see the process and the final result!" data-lang-es="¡Todos los grados de primaria (de 1° a 6°) participaron en el festival! Explora el arte y la creatividad de cada grado, haciendo clic en el botón correspondiente. ¡Te invitamos a ver el proceso y el resultado final!">¡Todos los grados de primaria (de 1° a 6°) participaron en el festival! Explora el arte y la creatividad de cada grado, haciendo clic en el botón correspondiente. ¡Te invitamos a ver el proceso y el resultado final!</p>
             <div class="year-buttons">
                 <a href="#gallery-primero" class="btn year-btn" data-year="primero"><span data-lang-en="First Grade" data-lang-es="Primero">Primero</span></a>
                 <a href="#gallery-tercero" class="btn year-btn" data-year="tercero"><span data-lang-en="Third Grade" data-lang-es="Tercero">Tercero</span></a>
@@ -135,29 +226,24 @@
             </div>
         </section>
 
-        <section class="section teachers-section">
-            <!-- Widget Dragón -->
-            <div class="section-character section-character-right">
-                <img src="./images/dragon.svg" alt="Dragón">
+        <section class="section action-buttons-section">
+            <!-- Widget Shrek -->
+            <div class="section-character section-character-left">
+                <img src="./images/shrek.svg" alt="Shrek">
             </div>
-            <h3 class="section__title" data-lang-en="Art Teachers" data-lang-es="Profesoras de Arte">Profesoras de Arte</h3>
-            <div class="teachers-list">
-                <div class="teacher-item">
-                    <div class="teacher-icon">🎨</div>
-                    <div class="teacher-info">
-                        <h4 class="teacher-name">Milagros Salas</h4>
-                        <p class="teacher-grades" data-lang-en="Grades: 1°A, 1°B, 1°C" data-lang-es="Grados: 1°A, 1°B, 1°C">Grados: 1°A, 1°B, 1°C</p>
-                    </div>
-                </div>
-                <div class="teacher-item">
-                    <div class="teacher-icon">🎨</div>
-                    <div class="teacher-info">
-                        <h4 class="teacher-name">Andrea Palmisano</h4>
-                        <p class="teacher-grades" data-lang-en="Grades: 3°A, 3°B, 3°C, 6°A, 6°B, 6°C" data-lang-es="Grados: 3°A, 3°B, 3°C, 6°A, 6°B, 6°C">Grados: 3°A, 3°B, 3°C, 6°A, 6°B, 6°C</p>
-                    </div>
-                </div>
+            <h3 class="section__title" data-lang-en="Event Actions" data-lang-es="Acciones del Evento">Acciones del Evento</h3>
+            <p data-lang-en="Use these buttons to find directions to the school or add the event to your calendar." data-lang-es="Usa estos botones para encontrar direcciones al colegio o agregar el evento a tu calendario."></p>
+            <div class="action-buttons-container">
+                <a href="https://www.google.com/maps/place/Instituto+Parroquial+Cristo+Rey,+Monse%C3%B1or+L%C3%B3pez+May+3304,+B1757+Gregorio+de+Laferrere,+Provincia+de+Buenos+Aires/@-34.751187,-58.587501,17z/data=!4m6!3m5!1s0x95bdd4d3a0178351:0x498a12e4f509d6f6!8m2!3d-34.751187!4d-58.587501!16s%2Fg%2F1tf709n_?entry=ttu" target="_blank" class="btn action-btn maps-btn">
+                    <i class="fas fa-map-marker-alt"></i> <span data-lang-en="How to Get to School" data-lang-es="Cómo Llegar al Colegio">Cómo Llegar al Colegio</span>
+                </a>
+                <button id="addToCalendarBtn" class="btn action-btn calendar-btn">
+                    <i class="fas fa-calendar-alt"></i> <span data-lang-en="Add to Calendar" data-lang-es="Agendar Evento">Agendar Evento</span>
+                </button>
             </div>
         </section>
+
+   
     </main>
 
     <footer class="footer">
@@ -166,6 +252,7 @@
             <img src="./images/logo.png" alt="Logo Instituto Cristo Rey">
         </div>
         <p>&copy; 2025 Instituto Parroquial Cristo Rey. Todos los derechos reservados.</p>
+        <p>Hecho con ♥ por excel-ente <a href="https://www.youtube.com/@excel-ente" target="_blank"></a></p>
     </footer>
 
     <!-- Modal para visualización de imagen/video en pantalla completa --><div id="fullscreenModal" class="modal">
@@ -176,6 +263,17 @@
         </div>
         <a class="prev-button">&#10094;</a>
         <a class="next-button">&#10095;</a>
+    </div>
+
+    <!-- Modal para detalles del elenco y alumnos --><div id="studentModal" class="modal">
+        <span class="close-button">&times;</span>
+        <div class="modal-content student-modal-content">
+            <div class="student-card">
+                <img id="studentPhoto" src="" alt="Foto del Alumno" class="student-photo">
+                <h2 id="studentName"></h2>
+                <p id="studentGrade"></p>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
