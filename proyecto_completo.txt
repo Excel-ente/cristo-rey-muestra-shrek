@@ -117,7 +117,6 @@
     <div id="splash-screen" class="splash-screen">
         <div class="splash-content">
             <img src="intro.svg" alt="Festival Logo" class="splash-logo">
-            <p class="splash-text" data-lang-en="Starting your journey through our play..." data-lang-es="Iniciando tu recorrido por nuestra obra...">Iniciando tu recorrido por nuestra obra...</p>
         </div>
     </div>
 
@@ -176,6 +175,15 @@
             <p data-lang-en="We invite you to browse through the images and enjoy this behind the scenes full of color, effort and enthusiasm!" data-lang-es="¡Los invitamos a recorrer las imágenes y disfrutar de este detrás de escena lleno de color, esfuerzo y entusiasmo!">¡Los invitamos a recorrer las imágenes y disfrutar de este detrás de escena lleno de color, esfuerzo y entusiasmo!</p>
         </section>
 
+        <section class="section text-section">
+            <!-- Widget Fiona -->
+            <div class="section-character section-character-left">
+                <img src="./images/fiona.svg" alt="Fiona">
+            </div>
+            <h3 class="section__title" data-lang-en="About the Festival" data-lang-es="Sobre el Festival">Sobre el Festival</h3>
+            <p data-lang-en="ONE QUIET DAY IN HIS SWAMP, SHREK'S PEACE IS INTERRUPTED WHEN CHARACTERS FROM DIFFERENT FAIRY TALES SUDDENLY APPEAR. CONFUSION, LAUGHTER, AND A TOUCH OF MAGIC FILL THE SWAMP AS EVERYONE LEARNS AN UNEXPECTED LESSON ABOUT FRIENDSHIP AND BELIEVING IN THEMSELVES." data-lang-es="UN DÍA TRANQUILO EN EL PANTANO DE SHREK SE VE INTERRUMPIDO CUANDO PERSONAJES DE DISTINTOS CUENTOS DE HADAS APARECEN REPENTINAMENTE. CONFUSIÓN, RISAS Y UN TOQUE DE MAGIA LLENAN EL PANTANO MIENTRAS TODOS APRENDEN UNA INESPERADA LECCIÓN SOBRE LA AMISTAD Y CREER EN SÍ MISMOS.">UN DÍA TRANQUILO EN EL PANTANO DE SHREK SE VE INTERRUMPIDO CUANDO PERSONAJES DE DISTINTOS CUENTOS DE HADAS APARECEN REPENTINAMENTE. CONFUSIÓN, RISAS Y UN TOQUE DE MAGIA LLENAN EL PANTANO MIENTRAS TODOS APRENDEN UNA INESPERADA LECCIÓN SOBRE LA AMISTAD Y CREER EN SÍ MISMOS.</p>
+        </section>
+
         <section class="section cast-section">
             <h3 class="section__title" data-lang-en="Meet the Cast" data-lang-es="Conoce al Elenco">Conoce al Elenco</h3>
             <p data-lang-en="Click on each character to learn more about the talented actors bringing them to life!" data-lang-es="¡Haz clic en cada personaje para conocer más sobre los talentosos actores que les dan vida!">¡Haz clic en cada personaje para conocer más sobre los talentosos actores que les dan vida!</p>
@@ -218,20 +226,46 @@
             <div class="production-list">
                 <div class="production-item">
                     <h4 data-lang-en="Narrators" data-lang-es="Narradores">Narradores</h4>
-                    <p><span class="student-name" data-name="Antonia Brienza" data-grade="6°A">Antonia Brienza</span>, <span class="student-name" data-name="Austin Sosa" data-grade="6°A">Austin Sosa</span>, <span class="student-name" data-name="Cielo Nuñez" data-grade="6°B">Cielo Nuñez</span>, <span class="student-name" data-name="Ciro Rodriguez" data-grade="6°B">Ciro Rodriguez</span>, <span class="student-name" data-name="Delfina Cañete" data-grade="6°C">Delfina Cañete</span>, <span class="student-name" data-name="Julieta Baigorria" data-grade="6°C">Julieta Baigorria</span></p>
+                    <ul class="student-list">
+                        <li>👧 <span class="student-name" data-name="Antonia Brienza" data-grade="6°A">Antonia Brienza</span></li>
+                        <li>👦 <span class="student-name" data-name="Austin Sosa" data-grade="6°A">Austin Sosa</span></li>
+                        <li>👧 <span class="student-name" data-name="Cielo Nuñez" data-grade="6°B">Cielo Nuñez</span></li>
+                        <li>👦 <span class="student-name" data-name="Ciro Rodriguez" data-grade="6°B">Ciro Rodriguez</span></li>
+                        <li>👧 <span class="student-name" data-name="Delfina Cañete" data-grade="6°C">Delfina Cañete</span></li>
+                        <li>👧 <span class="student-name" data-name="Julieta Baigorria" data-grade="6°C">Julieta Baigorria</span></li>
+                    </ul>
                 </div>
                 <div class="production-item">
                     <h4 data-lang-en="Script and Dialogues" data-lang-es="Guion y Diálogos">Guion y Diálogos</h4>
-                    <p><span class="student-name" data-name="Ana Fernández" data-grade="Docente">Ana Fernández</span>, <span class="student-name" data-name="Johanna Salas" data-grade="Docente">Johanna Salas</span>, <span class="student-name" data-name="Sebastián Payé" data-grade="Docente">Sebastián Payé</span></p>
+                    <ul class="student-list">
+                        <li>👩‍🏫 <span class="student-name" data-name="Ana Fernández" data-grade="Docente">Ana Fernández</span></li>
+                        <li>👩‍🏫 <span class="student-name" data-name="Johanna Salas" data-grade="Docente">Johanna Salas</span></li>
+                        <li>👨‍🏫 <span class="student-name" data-name="Sebastián Payé" data-grade="Docente">Sebastián Payé</span></li>
+                    </ul>
                 </div>
                 <div class="production-item">
                     <h4 data-lang-en="Choreographies" data-lang-es="Coreografías">Coreografías</h4>
-                    <p><span class="student-name" data-name="Iván Landriel" data-grade="Docente">Iván Landriel</span>, <span class="student-name" data-name="Florencia Escobar" data-grade="Docente">Florencia Escobar</span></p>
+                    <ul class="student-list">
+                        <li>👨‍🏫 <span class="student-name" data-name="Iván Landriel" data-grade="Docente">Iván Landriel</span></li>
+                        <li>👩‍🏫 <span class="student-name" data-name="Florencia Escobar" data-grade="Docente">Florencia Escobar</span></li>
+                    </ul>
                 </div>
                 <div class="production-item">
                     <h4 data-lang-en="Scenography Team" data-lang-es="Equipo de Escenografía">Equipo de Escenografía</h4>
-                    <p><strong data-lang-en="Teachers:" data-lang-es="Profesoras:">Profesoras:</strong> <span class="student-name" data-name="Andrea Palmisano" data-grade="Docente">Andrea Palmisano</span>, <span class="student-name" data-name="Milagros Salas" data-grade="Docente">Milagros Salas</span><br>
-                    <strong data-lang-en="Students:" data-lang-es="Alumnos:">Alumnos:</strong> <span class="student-name" data-name="Lisandro Agüero" data-grade="6°A">Lisandro Agüero</span>, <span class="student-name" data-name="Luciano Guillen" data-grade="6°A">Luciano Guillen</span>, <span class="student-name" data-name="Milo Ceraldi" data-grade="6°B">Milo Ceraldi</span>, <span class="student-name" data-name="Paz Banegas Rossi" data-grade="6°B">Paz Banegas Rossi</span>, <span class="student-name" data-name="Santiago Jimenez" data-grade="6°C">Santiago Jimenez</span>, <span class="student-name" data-name="Valentino Chavez" data-grade="6°C">Valentino Chavez</span></p>
+                    <p><strong data-lang-en="Teachers:" data-lang-es="Profesoras:">Profesoras:</strong></p>
+                    <ul class="student-list">
+                        <li>👩‍🏫 <span class="student-name" data-name="Andrea Palmisano" data-grade="Docente">Andrea Palmisano</span></li>
+                        <li>👩‍🏫 <span class="student-name" data-name="Milagros Salas" data-grade="Docente">Milagros Salas</span></li>
+                    </ul>
+                    <p><strong data-lang-en="Students:" data-lang-es="Alumnos:">Alumnos:</strong></p>
+                    <ul class="student-list">
+                        <li>👦 <span class="student-name" data-name="Lisandro Agüero" data-grade="6°A">Lisandro Agüero</span></li>
+                        <li>👦 <span class="student-name" data-name="Luciano Guillen" data-grade="6°A">Luciano Guillen</span></li>
+                        <li>👦 <span class="student-name" data-name="Milo Ceraldi" data-grade="6°B">Milo Ceraldi</span></li>
+                        <li>👧 <span class="student-name" data-name="Paz Banegas Rossi" data-grade="6°B">Paz Banegas Rossi</span></li>
+                        <li>👦 <span class="student-name" data-name="Santiago Jimenez" data-grade="6°C">Santiago Jimenez</span></li>
+                        <li>👦 <span class="student-name" data-name="Valentino Chavez" data-grade="6°C">Valentino Chavez</span></li>
+                    </ul>
                 </div>
                 <div class="production-item">
                     <h4 data-lang-en="Technical Support & School Maintenance" data-lang-es="Soporte Técnico y Mantenimiento Escolar">Soporte Técnico y Mantenimiento Escolar</h4>
@@ -240,14 +274,7 @@
             </div>
         </section>
 
-        <section class="section action-buttons-section">
-            <a href="https://www.google.com/maps/place/Instituto+Parroquial+Cristo+Rey,+Monse%C3%B1or+L%C3%B3pez+May+3304,+B1757+Gregorio+de+Laferrere,+Provincia+de+Buenos+Aires/@-34.751187,-58.587501,17z/data=!4m6!3m5!1s0x95bdd4d3a0178351:0x498a12e4f509d6f6!8m2!3d-34.751187!4d-58.587501!16s%2Fg%2F1tf709n_?entry=ttu" target="_blank" class="btn action-btn maps-btn">
-                <i class="fas fa-map-marker-alt"></i> <span data-lang-en="How to Get to School" data-lang-es="Cómo Llegar al Colegio">Cómo Llegar al Colegio</span>
-            </a>
-            <button id="addToCalendarBtn" class="btn action-btn calendar-btn">
-                <i class="fas fa-calendar-alt"></i> <span data-lang-en="Add to Calendar" data-lang-es="Agendar Evento">Agendar Evento</span>
-            </button>
-        </section>
+
 
         <section class="section project-section">
             <!-- Widget Gato con Botas -->
@@ -264,14 +291,7 @@
                 <!-- Agrega más imágenes/videos de la escenografía aquí --></div>
         </section>
 
-        <section class="section text-section">
-            <!-- Widget Fiona -->
-            <div class="section-character section-character-left">
-                <img src="./images/fiona.svg" alt="Fiona">
-            </div>
-            <h3 class="section__title" data-lang-en="About the Festival" data-lang-es="Sobre el Festival">Sobre el Festival</h3>
-            <p data-lang-en="ONE QUIET DAY IN HIS SWAMP, SHREK'S PEACE IS INTERRUPTED WHEN CHARACTERS FROM DIFFERENT FAIRY TALES SUDDENLY APPEAR. CONFUSION, LAUGHTER, AND A TOUCH OF MAGIC FILL THE SWAMP AS EVERYONE LEARNS AN UNEXPECTED LESSON ABOUT FRIENDSHIP AND BELIEVING IN THEMSELVES." data-lang-es="UN DÍA TRANQUILO EN EL PANTANO DE SHREK SE VE INTERRUMPIDO CUANDO PERSONAJES DE DISTINTOS CUENTOS DE HADAS APARECEN REPENTINAMENTE. CONFUSIÓN, RISAS Y UN TOQUE DE MAGIA LLENAN EL PANTANO MIENTRAS TODOS APRENDEN UNA INESPERADA LECCIÓN SOBRE LA AMISTAD Y CREER EN SÍ MISMOS.">UN DÍA TRANQUILO EN EL PANTANO DE SHREK SE VE INTERRUMPIDO CUANDO PERSONAJES DE DISTINTOS CUENTOS DE HADAS APARECEN REPENTINAMENTE. CONFUSIÓN, RISAS Y UN TOQUE DE MAGIA LLENAN EL PANTANO MIENTRAS TODOS APRENDEN UNA INESPERADA LECCIÓN SOBRE LA AMISTAD Y CREER EN SÍ MISMOS.</p>
-        </section>
+
 
         <section class="section year-galleries-section">
             <h3 class="section__title" data-lang-en="Galleries by Grade" data-lang-es="Galerías por Año">Galerías por Año</h3>
@@ -308,37 +328,24 @@
             </div>
         </section>
 
-        <section class="section teachers-section">
-            <!-- Widget Dragón -->
-            <div class="section-character section-character-right">
-                <img src="./images/dragon.svg" alt="Dragón">
+        <section class="section action-buttons-section">
+            <!-- Widget Shrek -->
+            <div class="section-character section-character-left">
+                <img src="./images/shrek.svg" alt="Shrek">
             </div>
-            <h3 class="section__title" data-lang-en="Scenography Team" data-lang-es="Equipo de Escenografía">Equipo de Escenografía</h3>
-            <p class="clickable-note" data-lang-en="Click on a name to see the student's photo!" data-lang-es="¡Haz clic en un nombre para ver la foto del alumno!"></p>
-            <div class="teachers-list">
-                <div class="teacher-item">
-                    <div class="teacher-icon">🎨</div>
-                    <div class="teacher-info">
-                        <h4 class="teacher-name">Milagros Salas</h4>
-                        <p class="teacher-grades" data-lang-en="Teacher - Grades: 1°A, 1°B, 1°C" data-lang-es="Profesora - Grados: 1°A, 1°B, 1°C">Profesora - Grados: 1°A, 1°B, 1°C</p>
-                    </div>
-                </div>
-                <div class="teacher-item">
-                    <div class="teacher-icon">🎨</div>
-                    <div class="teacher-info">
-                        <h4 class="teacher-name">Andrea Palmisano</h4>
-                        <p class="teacher-grades" data-lang-en="Teacher - Grades: 3°A, 3°B, 3°C, 6°A, 6°B, 6°C" data-lang-es="Profesora - Grados: 3°A, 3°B, 3°C, 6°A, 6°B, 6°C">Profesora - Grados: 3°A, 3°B, 3°C, 6°A, 6°B, 6°C</p>
-                    </div>
-                </div>
-                <div class="teacher-item">
-                    <div class="teacher-icon">🎨</div>
-                    <div class="teacher-info">
-                        <h4 class="teacher-name" data-lang-en="Students" data-lang-es="Alumnos">Alumnos</h4>
-                        <p class="teacher-grades"><span class="student-name" data-name="Lisandro Agüero" data-grade="6°A">Lisandro Agüero</span>, <span class="student-name" data-name="Luciano Guillen" data-grade="6°A">Luciano Guillen</span>, <span class="student-name" data-name="Milo Ceraldi" data-grade="6°B">Milo Ceraldi</span>, <span class="student-name" data-name="Paz Banegas Rossi" data-grade="6°B">Paz Banegas Rossi</span>, <span class="student-name" data-name="Santiago Jimenez" data-grade="6°C">Santiago Jimenez</span>, <span class="student-name" data-name="Valentino Chavez" data-grade="6°C">Valentino Chavez</span></p>
-                    </div>
-                </div>
+            <h3 class="section__title" data-lang-en="Event Actions" data-lang-es="Acciones del Evento">Acciones del Evento</h3>
+            <p data-lang-en="Use these buttons to find directions to the school or add the event to your calendar." data-lang-es="Usa estos botones para encontrar direcciones al colegio o agregar el evento a tu calendario."></p>
+            <div class="action-buttons-container">
+                <a href="https://www.google.com/maps/place/Instituto+Parroquial+Cristo+Rey,+Monse%C3%B1or+L%C3%B3pez+May+3304,+B1757+Gregorio+de+Laferrere,+Provincia+de+Buenos+Aires/@-34.751187,-58.587501,17z/data=!4m6!3m5!1s0x95bdd4d3a0178351:0x498a12e4f509d6f6!8m2!3d-34.751187!4d-58.587501!16s%2Fg%2F1tf709n_?entry=ttu" target="_blank" class="btn action-btn maps-btn">
+                    <i class="fas fa-map-marker-alt"></i> <span data-lang-en="How to Get to School" data-lang-es="Cómo Llegar al Colegio">Cómo Llegar al Colegio</span>
+                </a>
+                <button id="addToCalendarBtn" class="btn action-btn calendar-btn">
+                    <i class="fas fa-calendar-alt"></i> <span data-lang-en="Add to Calendar" data-lang-es="Agendar Evento">Agendar Evento</span>
+                </button>
             </div>
         </section>
+
+   
     </main>
 
     <footer class="footer">
@@ -347,6 +354,7 @@
             <img src="./images/logo.png" alt="Logo Instituto Cristo Rey">
         </div>
         <p>&copy; 2025 Instituto Parroquial Cristo Rey. Todos los derechos reservados.</p>
+        <p>Hecho con ♥ por excel-ente <a href="https://www.youtube.com/@excel-ente" target="_blank"></a></p>
     </footer>
 
     <!-- Modal para visualización de imagen/video en pantalla completa --><div id="fullscreenModal" class="modal">
@@ -390,18 +398,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function removeSplashScreen() {
         if (splashScreen) {
             splashScreen.classList.add('fade-out');
-            
-            // Remove splash screen from DOM after fade-out transition
+
             setTimeout(() => {
                 splashScreen.style.display = 'none';
-                body.classList.remove('loading');
-            }, 1000); // Match the CSS transition duration
+            }, 1000);
         }
+        // SIEMPRE sacar el loading, haya o no splash
+        body.classList.remove('loading');
     }
-    
-    // Remove splash screen after 4 seconds
+
+
+    // Remove splash screen after 3 seconds
     setTimeout(removeSplashScreen, 4000);
     
+    if (splashScreen) {
+        splashScreen.addEventListener('click', removeSplashScreen);
+    }
     // ========== DATOS DEL ELENCO ==========
     const castData = {
         shrek: { name: 'Shrek', actor: 'Bautista Formica', grade: '6°B' },
@@ -529,6 +541,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+
+        
     // --- Lógica para el Modal Fullscreen (compartido por index.html y feed.html) ---
     const fullscreenModal = document.getElementById('fullscreenModal');
     const closeButton = document.querySelector('.modal .close-button');
@@ -538,68 +553,82 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevButton = document.querySelector('.prev-button');
     const nextButton = document.querySelector('.next-button');
 
-    let currentItems = []; // Almacenará los items actuales de la galería/feed
+    let currentItems = [];
     let currentIndex = 0;
 
     function openModal(itemElement) {
+        if (!fullscreenModal || !modalImage || !modalVideo || !modalCaption || !itemElement) return;
+
         fullscreenModal.style.display = 'flex';
+
         const type = itemElement.dataset.type || (itemElement.tagName === 'IMG' ? 'image' : 'video');
         const src = itemElement.dataset.full || itemElement.src;
-        const alt = itemElement.alt;
-        const caption = itemElement.querySelector('.feed-item__caption')?.textContent || alt; // Para el feed
+        const alt = itemElement.alt || '';
+        const caption =
+            itemElement.closest('.feed-item')?.querySelector('.feed-item__caption')?.textContent ||
+            alt;
 
         if (type === 'image') {
             modalImage.src = src;
             modalImage.alt = alt;
             modalImage.style.display = 'block';
             modalVideo.style.display = 'none';
-            modalVideo.pause(); // Pausa cualquier video que pudiera estar reproduciéndose
+            modalVideo.pause();
         } else if (type === 'video') {
             modalVideo.src = src;
-            modalVideo.alt = alt;
             modalVideo.style.display = 'block';
-            modalVideo.play();
             modalImage.style.display = 'none';
+            modalVideo.play();
         }
-        modalCaption.textContent = caption;
 
-        // Determinar qué elementos son navegables
+        modalCaption.textContent = caption || '';
+
         if (document.body.classList.contains('feed-page')) {
             currentItems = Array.from(document.querySelectorAll('.feed-item'));
         } else {
-            // Asume que estamos en index.html y navega solo dentro de la galería actual abierta o el proyecto
-            const visibleGallery = document.querySelector('.grade-gallery-section[style*="block"] .gallery') || document.querySelector('.project-gallery');
+            const visibleGallery =
+                document.querySelector('.grade-gallery-section[style*="block"] .gallery') ||
+                document.querySelector('.project-gallery');
+
             if (visibleGallery) {
                 currentItems = Array.from(visibleGallery.querySelectorAll('.gallery__item'));
             } else {
                 currentItems = Array.from(document.querySelectorAll('.project-gallery .gallery__item'));
             }
         }
-        
-        currentIndex = currentItems.indexOf(itemElement);
+
+        currentIndex = currentItems.indexOf(itemElement.closest('.feed-item, .gallery__item')) || 0;
         updateNavigationButtons();
     }
 
     function closeModal() {
+        if (!fullscreenModal) return;
         fullscreenModal.style.display = 'none';
-        modalVideo.pause();
-        modalVideo.currentTime = 0; // Reinicia el video
-        modalImage.src = '';
-        modalVideo.src = '';
-        modalCaption.textContent = '';
+        if (modalVideo) {
+            modalVideo.pause();
+            modalVideo.currentTime = 0;
+            modalVideo.src = '';
+        }
+        if (modalImage) modalImage.src = '';
+        if (modalCaption) modalCaption.textContent = '';
     }
 
     function showNext() {
+        if (!currentItems.length) return;
         currentIndex = (currentIndex + 1) % currentItems.length;
-        openModal(currentItems[currentIndex]);
+        const el = currentItems[currentIndex].querySelector('img, video') || currentItems[currentIndex];
+        openModal(el);
     }
 
     function showPrev() {
+        if (!currentItems.length) return;
         currentIndex = (currentIndex - 1 + currentItems.length) % currentItems.length;
-        openModal(currentItems[currentIndex]);
+        const el = currentItems[currentIndex].querySelector('img, video') || currentItems[currentIndex];
+        openModal(el);
     }
 
     function updateNavigationButtons() {
+        if (!prevButton || !nextButton) return;
         if (currentItems.length > 1) {
             prevButton.style.display = 'block';
             nextButton.style.display = 'block';
@@ -609,42 +638,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Event listeners para abrir el modal en el index.html
+    // Click en items de galería (index.html)
     document.querySelectorAll('.gallery__item').forEach(item => {
-        item.addEventListener('click', () => openModal(item));
+        item.addEventListener('click', () => {
+            const media = item.querySelector('img, video') || item;
+            openModal(media);
+        });
     });
 
-    // Event listeners para abrir el modal en el feed.html
+    // Click en items del feed (feed.html)
     document.querySelectorAll('.feed-item').forEach(item => {
         item.addEventListener('click', () => {
-            // Necesitamos pasar el elemento IMG o VIDEO dentro del .feed-item al openModal
             const mediaElement = item.querySelector('img, video');
-            // Añadimos data-type y data-full al elemento media para que openModal lo reconozca
-            if (mediaElement) {
-                mediaElement.dataset.type = item.dataset.type;
-                mediaElement.dataset.full = item.dataset.src;
-            }
+            if (!mediaElement) return;
+
+            mediaElement.dataset.type = item.dataset.type || (mediaElement.tagName === 'IMG' ? 'image' : 'video');
+            mediaElement.dataset.full = item.dataset.src || mediaElement.src;
+
             openModal(mediaElement);
         });
     });
 
-    closeButton.addEventListener('click', closeModal);
-    prevButton.addEventListener('click', showPrev);
-    nextButton.addEventListener('click', showNext);
+    // Listeners del modal solo si existen todos los elementos clave
+    if (fullscreenModal && closeButton && prevButton && nextButton) {
+        closeButton.addEventListener('click', closeModal);
+        prevButton.addEventListener('click', showPrev);
+        nextButton.addEventListener('click', showNext);
 
-    // Cerrar modal haciendo click fuera (en el fondo oscuro)
-    fullscreenModal.addEventListener('click', (e) => {
-        if (e.target === fullscreenModal) {
-            closeModal();
-        }
-    });
+        fullscreenModal.addEventListener('click', (e) => {
+            if (e.target === fullscreenModal) closeModal();
+        });
 
-    // Cerrar con tecla ESC
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && fullscreenModal.style.display === 'flex') {
-            closeModal();
-        }
-    });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && fullscreenModal.style.display === 'flex') {
+                closeModal();
+            }
+        });
+    }
+
+
+
+
+
+
+
 
     // ========== LÓGICA PARA MODAL DEL ELENCO (OBSOLETO, REEMPLAZADO POR MODAL DE ALUMNOS) ==========
     // La funcionalidad del modal del elenco ha sido integrada en el modal de alumnos.
@@ -656,68 +693,71 @@ document.addEventListener('DOMContentLoaded', () => {
     // ... (resto del código obsoleto)
     */
 
-
     // ========== LÓGICA PARA MODAL DE ALUMNOS ==========
     const studentModal = document.getElementById('studentModal');
     const studentPhoto = document.getElementById('studentPhoto');
     const studentName = document.getElementById('studentName');
     const studentGrade = document.getElementById('studentGrade');
 
-    function openStudentModal(name, grade) {
-        // Generar el nombre del archivo de imagen a partir del nombre del alumno
-        const photoFileName = name.toLowerCase().replace(/\s+/g, '_') + '.svg';
-        
-        studentName.textContent = name;
-        studentGrade.textContent = grade;
-        studentPhoto.src = `./alumnos/${photoFileName}`;
-        
-        // Manejo de error si la foto no existe
-        studentPhoto.onerror = () => {
-            // Si falla, intenta con un avatar genérico o muestra un placeholder
-            const initials = name.split(' ').map(n => n[0]).join('');
-            studentPhoto.src = `https://ui-avatars.com/api/?name=${initials}&background=random&color=fff`;
-            studentPhoto.onerror = null; // Evita bucles de error
-        };
+    if (studentModal && studentPhoto && studentName && studentGrade) {
+        function openStudentModal(name, grade) {
+            const photoFileName = name.toLowerCase().replace(/\s+/g, '_') + '.svg';
 
-        studentModal.style.display = 'flex';
-    }
+            studentName.textContent = name;
+            studentGrade.textContent = grade;
+            studentPhoto.src = `./alumnos/${photoFileName}`;
 
-    function closeStudentModal() {
-        studentModal.style.display = 'none';
-    }
+            studentPhoto.onerror = () => {
+                const initials = name.split(' ').map(n => n[0]).join('');
+                studentPhoto.src = `https://ui-avatars.com/api/?name=${initials}&background=random&color=fff`;
+                studentPhoto.onerror = null;
+            };
 
-    // Event listeners para nombres de alumnos
-    document.querySelectorAll('.student-name').forEach(nameSpan => {
-        nameSpan.addEventListener('click', () => {
-            const name = nameSpan.dataset.name;
-            const grade = nameSpan.dataset.grade;
-            openStudentModal(name, grade);
-        });
-    });
-
-    // Event listeners para las tarjetas de personajes principales
-    document.querySelectorAll('.cast-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const name = card.dataset.name;
-            const grade = card.dataset.grade;
-            openStudentModal(name, grade);
-        });
-    });
-
-    // Cerrar modal de alumnos
-    studentModal.querySelector('.close-button').addEventListener('click', closeStudentModal);
-    studentModal.addEventListener('click', (e) => {
-        if (e.target === studentModal) {
-            closeStudentModal();
+            studentModal.style.display = 'flex';
         }
-    });
 
-    // Cerrar con tecla ESC
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && studentModal.style.display === 'flex') {
-            closeStudentModal();
+        function closeStudentModal() {
+            studentModal.style.display = 'none';
         }
-    });
+
+        // Nombres clickeables
+        document.querySelectorAll('.student-name').forEach(nameSpan => {
+            nameSpan.addEventListener('click', () => {
+                const name = nameSpan.dataset.name;
+                const grade = nameSpan.dataset.grade;
+                openStudentModal(name, grade);
+            });
+        });
+
+        // Tarjetas de personajes
+        document.querySelectorAll('.cast-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const name = card.dataset.name;
+                const grade = card.dataset.grade;
+                openStudentModal(name, grade);
+            });
+        });
+
+        // Botón cerrar dentro del modal
+        const studentCloseBtn = studentModal.querySelector('.close-button');
+        if (studentCloseBtn) {
+            studentCloseBtn.addEventListener('click', closeStudentModal);
+        }
+
+        // Cerrar haciendo click fuera
+        studentModal.addEventListener('click', (e) => {
+            if (e.target === studentModal) {
+                closeStudentModal();
+            }
+        });
+
+        // ESC para cerrar SOLO si el modal existe y está visible
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && studentModal.style.display === 'flex') {
+                closeStudentModal();
+            }
+        });
+    }
 });
 
 ################################################################################
@@ -768,19 +808,19 @@ if __name__ == "__main__":
 
 /* Variables de color - Nueva paleta de colores */
 :root {
-    --primary-bg: #2A581F; /* Primary Background (Dark Green) */
-    --secondary-highlight: #EED86F; /* Secondary/Highlight (Gold/Yellow) */
-    --accent-link: #64AC44; /* Accent/Link (Light Green) */
-    --text-neutral: #F3F3F3; /* Text/Neutral (Off-White/Light Gray) */
+    --primary-bg: #7A9244; /* Primary Background (Dark Green) */
+    --secondary-highlight: #C6EE7C; /* Secondary/Highlight (Light Green/Yellow) */
+    --accent-link: #8CB04E; /* Accent/Link (Medium Green) */
+    --text-neutral: #E1DFB6; /* Text/Neutral (Beige) */
 
-    --shrek-green: #2A581F; /* Verde pantano de Shrek - actualizado */
-    --shrek-dark-green: #2A581F; /* Verde oscuro - actualizado */
-    --shrek-mud: #795548; /* Marrón barro */
-    --shrek-gold: #EED86F; /* Dorado brillante - actualizado */
-    --shrek-yellow: #EED86F; /* Amarillo dorado - actualizado */
-    --shrek-white: #F3F3F3; /* Blanco puro - actualizado */
-    --shrek-cream: #F3F3F3; /* Crema/Cornsilk - actualizado */
-    --swamp-green: #64AC44; /* Verde pantano oscuro - actualizado */
+    --shrek-green: #7A9244; /* Verde pantano de Shrek - actualizado */
+    --shrek-dark-green: #7A9244; /* Verde oscuro - actualizado */
+    --shrek-mud: #5B452C; /* Marrón barro */
+    --shrek-gold: #C6EE7C; /* Dorado brillante - actualizado */
+    --shrek-yellow: #C6EE7C; /* Amarillo dorado - actualizado */
+    --shrek-white: #E1DFB6; /* Blanco puro - actualizado */
+    --shrek-cream: #E1DFB6; /* Crema/Cornsilk - actualizado */
+    --swamp-green: #8CB04E; /* Verde pantano oscuro - actualizado */
 
     --color-primary-red: #E74C3C;
     --color-secondary-blue: #3498DB;
@@ -790,8 +830,8 @@ if __name__ == "__main__":
     --color-accent-orange: #FFA500;
     --color-light-gray: #ECF0F1;
     --color-dark-text: #2C3E50;
-    --color-white: #F3F3F3;
-    --color-gold: #EED86F;
+    --color-white: #E1DFB6;
+    --color-gold: #C6EE7C;
 
     --font-primary: 'Poppins', 'Segoe UI', Arial, sans-serif;
     --font-secondary: 'Verdana', sans-serif;
@@ -805,7 +845,7 @@ if __name__ == "__main__":
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #2A581F 0%, #64AC44 50%, #2A581F 100%);
+    background: linear-gradient(135deg, #7A9244 0%, #8CB04E 50%, #7A9244 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -830,10 +870,10 @@ if __name__ == "__main__":
 }
 
 .splash-logo {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 30px;
-    animation: pulse 2s ease-in-out infinite;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0;
+    animation: introAnim 2s ease-in-out forwards;
     filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
 }
 
@@ -843,17 +883,50 @@ if __name__ == "__main__":
     font-weight: 600;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    animation: fadeInOut 2s ease-in-out infinite;
+    animation: fadeInOut 3s ease-in-out infinite;
     margin: 0;
     max-width: 300px;
 }
 
-@keyframes pulse {
-    0%, 100% {
+@keyframes introAnim {
+    0% {
+        width: 100px;
+        height: 100px;
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.2);
+    }
+    20% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+    }
+    40% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.2);
+    }
+    60% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(1);
+    }
+    90% {
+        width: 100px;
+        height: 100px;
+        transform: scale(1);
+    }
+    100% {
+        width: 100vw;
+        height: 100vh;
+        transform: scale(1);
     }
 }
 
@@ -899,13 +972,13 @@ body.loading .language-toggle {
 /* Keep characters and language toggle functional */
 body.loading .shrek-characters {
     opacity: 1 !important;
-    pointer-events: auto !important;
+    pointer-events: none !important; /* que NUNCA interfiera */
 }
 
+
 body.loading .language-toggle {
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    z-index: 10000 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }
 
 body:not(.loading) .main-content,
@@ -917,12 +990,16 @@ body:not(.loading) .shrek-characters {
     pointer-events: auto;
 }
 
+body:not(.loading) .shrek-characters {
+    pointer-events: none;
+}
+
 /* Base global */
 body {
     font-family: var(--font-primary);
     margin: 0;
     padding: 0;
-    background-image: url('./images/fondo.jpg');
+    background-image: url('./images/fondo.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1253,6 +1330,15 @@ body::before {
     display: flex;
     flex-wrap: wrap; /* Envuelve los botones si no caben */
     gap: 12px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* --- Contenedor de Botones de Acción --- */
+.action-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-top: 20px;
     justify-content: center;
 }
@@ -1597,6 +1683,15 @@ body::before {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
+}
+
+.student-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.student-list li {
+    margin-bottom: 5px;
 }
 
 .student-name:hover {
@@ -2010,6 +2105,10 @@ body::before {
     }
 
     .year-buttons {
+        gap: 20px;
+    }
+
+    .action-buttons-container {
         gap: 20px;
     }
 

@@ -410,6 +410,20 @@ body::before {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
+.cast-card p {
+    color: var(--shrek-white);
+    font-size: 0.85em;
+    margin: 5px 0 0 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.cast-grade {
+    color: var(--shrek-gold) !important;
+    font-weight: 600 !important;
+    font-size: 0.9em !important;
+    margin-top: 3px !important;
+}
+
 /* --- Cast Modal --- */
 .cast-modal-content {
     background: rgba(100, 172, 68, 0.9);
@@ -713,15 +727,17 @@ body::before {
 
 .feed-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cuadrícula tipo Instagram */
-    gap: 12px;
+    grid-template-columns: 1fr; /* 1 columna en mobile */
+    gap: 15px;
     padding: 15px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .feed-item {
     position: relative;
     width: 100%;
-    height: 150px; /* Altura fija para la cuadrícula */
+    aspect-ratio: 4/3; /* Proporción consistente */
     background: rgba(100, 172, 68, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -1309,13 +1325,11 @@ body::before {
         padding: 15px 25px;
     }
 
+    /* Grid de 4 columnas en desktop para las galerías */
     .feed-grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-    }
-
-    .feed-item {
-        height: 200px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
     }
     
     .feed-page .header__title {
@@ -1378,4 +1392,37 @@ body::before {
     margin-bottom: 15px;
     font-style: italic;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* --- Sección de Canciones --- */
+.songs-section p {
+    font-size: 1.05em;
+    margin-bottom: 12px;
+    color: var(--shrek-white);
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.songs-videos {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* En pantallas grandes, dos columnas */
+@media (min-width: 768px) {
+    .songs-videos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.song-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    border: 3px solid var(--shrek-gold);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    background: #000;
 }
