@@ -1418,11 +1418,19 @@ body::before {
     }
 }
 
-.song-video iframe {
+.song-video iframe,
+.song-video video {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 12px;
     border: 3px solid var(--shrek-gold);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     background: #000;
+}
+
+.song-caption {
+    margin-top: 6px;
+    font-size: 0.95em;
+    text-align: center;
+    color: var(--shrek-gold);
 }
